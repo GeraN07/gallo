@@ -1,0 +1,28 @@
+.page-header {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header__logo {
+    width: 162px;
+    height: 50px;
+    background-image: url("./assets/svg/Gallo_Acoustics.svg");
+}
+
+.page-header__second-logo {
+    width: 57px;
+    height: 30px;
+    background-image: url("./assets/svg/Pult.svg");
+    margin-top: auto;
+    margin-bottom: auto;
+}

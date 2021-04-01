@@ -1,0 +1,208 @@
+.slides{
+
+}
+
+.slide-card,
+.slide-second-card {
+    max-height: 620px;
+    max-width: 1200px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: 100%;
+    min-height: 400px;
+}
+
+.slide-card:hover .slide-card__image img {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+
+.slide-card__image-title,
+.slide-second-card__image-title {
+    position: absolute;
+    bottom: 50px;
+    font-family: "Gilroy-Semibold", sans-serif;
+    text-transform: uppercase;
+    left: 40px;
+    font-size: 40px;
+}
+
+.slide-second-card:hover .slide-second-card__image img {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+
+.slide-second-card__image-title {
+    font-size: 190px;
+    color: #fff;
+    margin: 0;
+}
+
+.slide-second-card__image-title .white-span {
+    font-size: 60px;
+    color: #fff;
+    font-family: Gilroy-Regular;
+}
+
+.slide-second-card__image-title span,
+.slide-card__image-title span {
+    color: #1d9cd8;
+}
+
+.slide-card__image-title .white-span {
+    color: #fff;
+}
+
+.slide-second-card__image,
+.slide-card__image {
+    max-height: 540px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-second-card__image img,
+.slide-card__image img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s;
+    min-height: 340px;
+}
+
+.slide-second-card__footer,
+.slide-card__footer {
+    background-color: #1d9cd8;
+    width: 100%;
+    height: 60px;
+    margin-top: 0;
+}
+
+.slide-card:hover .slide-second-card__footer,
+.slide-card:hover .slide-card__footer {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slide-second-card:hover .slide-second-card__footer,
+.slide-second-card:hover .slide-second-card__footer {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slide-second-card__footer-title,
+.slide-card__footer-title {
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0;
+    margin-left: 40px;
+    font-family: "Gilroy-Semibold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slide-second-card__footer-text,
+.slide-card__footer-text {
+    font-size: 14px;
+    line-height: 100%;
+    margin: 0;
+    margin-left: 40px;
+    font-family: "Gilroy-Semibold", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.second-slides .slick-dots{
+
+}
+
+.slick-dots li button {
+    width: 18px;
+    height: 18px;
+    border-radius: 25px;
+    background: #1d9cd8;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    background: #000;
+}
+
+.slide:nth-child(10) .slide-second-card__image-title {
+    left: auto;
+    right: 40px;
+}
+
+@media (max-width: 1279px) {
+    .slide-card__image-title {
+        font-size: 24px;
+    }
+
+    .slide-second-card__footer-title,
+    .slide-card__footer-title {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slick-dots li button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .slide-second-card__image img,
+    .slide-card__image img {
+        object-fit: cover;
+    }
+
+    .slide-card__footer-title {
+        padding-top: 10px;
+    }
+
+    .slide-second-card__image-title .white-span {
+        font-size: 30px;
+    }
+
+    .slide-second-card__image-title {
+        font-size: 98px;
+        left: 10px;
+    }
+
+    .slide:nth-child(10) .slide-second-card__image-title {
+        left: auto;
+        right: 5px;
+    }
+
+    .slide-second-card__footer-title {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide-card__image-title {
+        left: 10px;
+    }
+
+    .slide-card__footer-text,
+    .slide-card__footer-title {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,73 @@
+include ../components/page-header/page-header
+include ../components/page-footer/page-footer
+include ../components/slide/slide
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Gallo
+    body 
+        +page-header
+        main
+            section.sliders-block
+                .first-slides.slides
+                    .slide
+                        +slide-card("img/micro_micro-se.jpg", ["<span>Побалуй</span> себя выбором"],"Micro и micro se","спутниковые колонки")
+                    .slide
+                        +slide-card("img/droplet.jpg",["<span class=white-span>Давай</span> зажжем"],"Droplet","подвесная акустика")
+                    .slide
+                        +slide-card("img/PROFILESUBx2.jpg",["<span>Держаться</span> в тени"],"profilesub","сабвуфер")
+                .second-slides.slides 
+                    .slide
+                        +slide-second-card("img/micro.jpg", ["<span class=white-span>Скидки до</span> <br>30%"],"Micro")
+                    .slide
+                        +slide-second-card("img/micro-se.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"Micro se")
+                    .slide
+                        +slide-second-card("img/micro-droplet.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"micro droplet")
+                    .slide
+                        +slide-second-card("img/micro-droplet.jpg", ["<span class=white-span>Скидки до</span> <br>30%"],"micro se droplet")
+                    .slide
+                        +slide-second-card("img/micro-droplet.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"adiva droplet")
+                    .slide
+                        +slide-second-card("img/micro-droplet.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"adiva se droplet")
+                    .slide
+                        +slide-second-card("img/adiva.jpg", ["<span class=white-span>Скидки до</span> <br>30%"],"adiva")
+                    .slide
+                        +slide-second-card("img/adiva.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"adiva se")
+                    .slide
+                        +slide-second-card("img/strada-2.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"strada 2")
+                    .slide
+                        +slide-second-card("img/PROFILESUBx2.jpg",["<span class=white-span>Скидки до</span> <br>30%"],"subwoofers")
+            section.menu-block
+                .menu-block__wrapper 
+                    ul.menu-block__devices-list 
+                        li.menu-block__device-micro micro 
+                        li.menu-block__device-micro-se micro se
+                        li.menu-block__device-adiva adiva
+                        li.menu-block__device-adiva-se adiva se 
+                        li.menu-block__device-micro-droplet micro droplet
+                        li.menu-block__device-micro-se-droplet micro se droplet 
+                        li.menu-block__device-adiva-droplet adiva droplet 
+                        li.menu-block__device-adiva-se-droplet adiva se droplet 
+                        li.menu-block__device-strada-2 strada 2
+                        li.menu-block__device-subwoofers subwoofers
+                        li.menu-block__device-accessories accessories
+                    .menu-block__device-image 
+                        .device-image-block.menu-block__device-micro-image.active
+                        .device-image-block.menu-block__device-micro-se-image
+                        .device-image-block.menu-block__device-adiva-image
+                        .device-image-block.menu-block__device-adiva-se-image
+                        .device-image-block.menu-block__device-micro-droplet-image
+                        .device-image-block.menu-block__device-micro-se-droplet-image
+                        .device-image-block.menu-block__device-adiva-droplet-image
+                        .device-image-block.menu-block__device-adiva-se-droplet-image
+                        .device-image-block.menu-block__device-strada-2-image
+                        .device-image-block.menu-block__device-subwoofers-image
+                        .device-image-block.menu-block__device-accessories-image
+        +page-footer
+
+
+
+                

@@ -1,0 +1,177 @@
+body {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.sliders-block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.first-slides {
+    max-height: 620px;
+}
+
+.second-slides {
+    margin-top: 70px;
+}
+
+.menu-block__devices-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-block__devices-list li {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Gilroy-Semibold", sans-serif;
+    color: #1d9cd8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.menu-block__devices-list li.active {
+    color: #000;
+    transition: color 0.5s;
+}
+
+.menu-block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+.menu-block__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-block__device-micro-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/micro2.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-micro-se-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/micro_se.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-adiva-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/adiva2.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-adiva-se-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/adiva_se.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-micro-droplet-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/micro_droplet.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-micro-se-droplet-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/micro_se_droplet.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-adiva-droplet-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/adiva_droplet.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-adiva-se-droplet-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/adiva_se_droplet.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-strada-2-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/strada_2.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-subwoofers-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/subwoofers.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-accessories-image {
+    width: 600px;
+    height: 600px;
+    background-image: url("./assets/img/accessories.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.menu-block__device-micro-image.active,
+.menu-block__device-micro-se-image.active,
+.menu-block__device-adiva-image.active,
+.menu-block__device-adiva-se-image.active,
+.menu-block__device-micro-droplet-image.active,
+.menu-block__device-micro-se-droplet-image.active,
+.menu-block__device-adiva-droplet-image.active,
+.menu-block__device-adiva-se-droplet-image.active,
+.menu-block__device-strada-2-image.active,
+.menu-block__device-subwoofers-image.active,
+.menu-block__device-accessories-image.active {
+    display: block;
+}
+
+@media (max-width: 1279px) {
+    .second-slides {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 940px) {
+    .menu-block__device-image {
+        display: none;
+    }
+
+    .menu-block__devices-list {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}

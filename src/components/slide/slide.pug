@@ -1,0 +1,15 @@
+mixin slide-card(image,imageText,footer,text)
+    .slide-card
+        .slide-card__image
+            img(src=image, alt="")
+            h2.slide-card__image-title=imageText
+        .slide-card__footer 
+            h2.slide-card__footer-title=footer
+            p.slide-card__footer-text=text
+mixin slide-second-card(image,imageText,footer,text)
+    .slide-second-card
+        .slide-second-card__image
+            img(src=image, alt="")
+            h2.slide-second-card__image-title=imageText
+        .slide-second-card__footer 
+            h2.slide-second-card__footer-title=footer
