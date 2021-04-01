@@ -1,7 +1,3 @@
-.slides{
-
-}
-
 .slide-card,
 .slide-second-card {
     max-height: 620px;
@@ -11,6 +7,14 @@
     transition: transform 0.3s;
     height: 100%;
     min-height: 400px;
+}
+
+.slide-second-card__image img,
+.slide-card__image img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s;
+    min-height: 340px;
 }
 
 .slide-card:hover .slide-card__image img {
@@ -42,7 +46,7 @@
 .slide-second-card__image-title .white-span {
     font-size: 60px;
     color: #fff;
-    font-family: Gilroy-Regular;
+    font-family: Gilroy-Regular, sans-serif;
 }
 
 .slide-second-card__image-title span,
@@ -61,14 +65,6 @@
     overflow: hidden;
 }
 
-.slide-second-card__image img,
-.slide-card__image img {
-    height: 100%;
-    width: 100%;
-    transition: transform 0.3s;
-    min-height: 340px;
-}
-
 .slide-second-card__footer,
 .slide-card__footer {
     background-color: #1d9cd8;
@@ -85,14 +81,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.slide-second-card:hover .slide-second-card__footer,
-.slide-second-card:hover .slide-second-card__footer {
-    opacity: 0.8;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-}
-
 .slide-second-card__footer-title,
 .slide-card__footer-title {
     font-size: 20px;
@@ -102,6 +90,7 @@
     font-family: "Gilroy-Semibold", sans-serif;
     text-transform: uppercase;
     color: #fff;
+    padding-top: 5px;
 }
 
 .slide-second-card__footer-text,
@@ -122,10 +111,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-}
-
-.second-slides .slick-dots{
-
 }
 
 .slick-dots li button {
