@@ -129,7 +129,11 @@
     background: #000;
 }
 
-.slide:nth-child(10) .slide-second-card__image-title {
+.slide:nth-child(3) .slide-card .slide-card__image-title span {
+    color: #fff;
+}
+
+.slide:nth-child(2) .slide-card__image {
     left: auto;
     right: 40px;
 }
